@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+
+body {
+    background-image: url("/images/guild-bg.jpeg");
+    position: relative;
+}
+
+.navBar {
+    background-color: transparent;
+    position: sticky;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    background-color: rgb(206, 215, 131);
+    height: 50px;
+    width: 100px;
+    border: 2px solid rgb(120, 72, 3);
+    border-radius: 1rem;
+}
+
+.logo > img {
+    height: 50px;
+    width: 100px;
+    border-radius: 1rem;
+}
+
+.blogs {
+    background-color: #4b3a24;
+    height:20px;
+    width: 100px;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    border: 3px solid #d4a373; 
+    background-color: #bb8a59;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    color: #4b3a24;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+  
+  .post:before,
+  .post:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent, #d4a373);
+    left: 0;
+  }
+  
+  .post:before {
+    top: -20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .post:after {
+    bottom: -20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .post p {
+    text-align: justify;
+    line-height: 1.6;
+  } 
+
+
+.view-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 60%;
+  gap: 50px;
+}
+
+.option {
+  display: flex;
+  gap: 10px;
+}
+
+.option > * {
+  background-color: #4b3a24;
+  border: 2px solid gray;
+  border-radius: 12px;
+  text-decoration: none;
+  height: 20px;
+  width: 60px;
+  text-align: center;
+}
+
+.edit-container {
+  background-color: red;
+}
