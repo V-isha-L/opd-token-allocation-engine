@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/simonBg.jpg");
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerCircle {
+    height: 500px;
+    width: 500px;
+    background-color:transparent;
+    border-radius: 50%;
+    position: relative;
+}
+
+.innerCircle {
+    height: 200px;
+    width: 180px;
+    background-image: url("images/simonBg.jpg");
+    background-size: auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quadrant {
+    position: absolute;
+    height: 97%;
+    width: 97%;
+    border: 5px solid  rgb(77, 60, 39);
+    border-radius: 50%;
+    clip-path: polygon(0 0,100% 0, 50% 50%);
+    z-index: 0;
+}
+
+.topLeft {
+    background-color: red;
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.topRight {
+    background-color: green;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.downLeft {
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-135deg);
+}
+
+.downRight {
+    background-color: yellow;
+    bottom: 0;
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.scoreBoard {
+    height: 100px;
+    display: inline-block;
+    margin: 50px auto;
+    font-size: 4rem;
+    font-family: "Major Mono Display", monospace;
+    font-weight: bolder;
+    border: 10px solid ;
+    text-align: center;
+    border-radius: 1.5rem;
+    text-shadow: 2px 5px 5px rgb(255, 247, 236);
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    font-family: "Major Mono Display", monospace;
+    font-weight: bolder;
+    border: 3px solid;
+}
+
+.pressed {
+    background-color: rgb(150, 143, 143);
+    box-shadow: 10px 10px 10px whitesmoke;
+}
+
+.fullScreen {
+    width: 100vw;
+    height: 100vh;
+}
